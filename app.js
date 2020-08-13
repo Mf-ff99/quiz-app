@@ -44,7 +44,6 @@ take arr, parse into other arrays based on values (for loop?)
 see which array.length is longest
 load result page based on which array.length was longest
 on click start over, goes to start page
-
   */
 
 function countIndex() {
@@ -56,20 +55,18 @@ function generateStart() {
   $('main').html(`<div class='page'>
      <button id="start" class='start'>Start Quiz</button>
    </div>`);
-};
+}
 
 function handlePageTurn() {
   $('main').on('click', '.start', function (event) {
     generateNextQuestion();
   });
-}
-
+ 
+} 
 $('main').on('click', '.reset-btn', function (event) {
   STORE[5] = ['a'];
   generateStart();
 });
-
-
 
 
 
@@ -85,9 +82,9 @@ let final = {
   misakaFinal: 0,
   leviFinal: 0,
   titanFinal: 0,
-}
+};
 
-//
+
 function getResult(resultArr) {
   let erin = [];
   let misaka = [];
@@ -115,9 +112,8 @@ function getResult(resultArr) {
       endGoal = person;
     }
   }
-  console.log(endGoal);
   return endGoal;
-};
+}
 
 function getFinalResult() {
   let finalResult = (getResult(STORE[5]));
@@ -144,7 +140,7 @@ function generateNextQuestion() {
    </div>
  </div>`);
   } else {
-    console.log(STORE[5])
+    console.log(STORE[5]);
     console.log(getFinalResult())
     if (getFinalResult() === 'erinFinal') {
       $('main').html(`<div class='page-instance'>
@@ -156,7 +152,6 @@ function generateNextQuestion() {
       <div class="reset-state">
         <button id="reset-btn" class="reset-btn btn">Start over!</button>
       </div>
-
     </div>
   
 </div>`);
@@ -170,7 +165,6 @@ function generateNextQuestion() {
         <div class="reset-state">
           <button id="reset-btn" class="reset-btn btn">Start over!</button>
         </div>
-
       </div>
     
   </div>`);
@@ -184,7 +178,6 @@ function generateNextQuestion() {
       <div class="reset-state">
         <button id="reset-btn" class="reset-btn btn">Start over!</button>
       </div>
-
     </div>
   
 </div>`);
@@ -199,9 +192,7 @@ function generateNextQuestion() {
     <div class="reset-state">
       <button id="reset-btn" class="reset-btn btn">Start over!</button>
     </div>
-
   </div>
-
 </div>`);
     }
   }
@@ -214,5 +205,4 @@ function main() {
 }
 
 $(main);
-
 
