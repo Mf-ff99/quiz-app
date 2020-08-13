@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Who Are You?!? Attack on Titan Edition!!</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Who Are You?!? Attack on Titan Edition!!</h1>
+  </header>
+  <main>
+
+    <div class='page-instance'>
+      <button id="start-quiz" class='btn'>Start Quiz</button>
+    </div>
+    <div class='page-instance'>
+      <div class='question-index'>1/5</div>
+      <div class="question-text"> Wall Maria was just breached and you spy a lone titan stumbling down your street. What do you do?</div>
+      <div class="answers">
+        <form id='answers-form'> 
+          <input type='radio' id='erin' name='answer' value='e'>
+          <label for="erin">Run and get Misaka</label><br>
+          <input type="radio" id="misaka" name="answer" value="m">
+          <label for="misaka">Herd the civilians to safety</label><br>
+          <input type="radio" id="titan" name="answer" value="t">
+          <label for="titan">I am the titan</label><br>
+          <input type="radio" id="levi" name="answer" value="l">
+          <label for="levi">Charge the titan horde</label><br>
+          <button id="submit" class='submit-btn btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class='page-instance'>
+      <div class='question-index'>2/5</div>
+      <div class="question-text"> Wall Maria was just breached and you spy a lone titan stumbling down your street. What do you do?</div>
+      <div class="answers">
+        <form id='answers-form'> 
+          <input type='radio' id='erin' name='answer' value='e'>
+          <label for="erin">Run and get Misaka</label><br>
+          <input type="radio" id="misaka" name="answer" value="m">
+          <label for="misaka">Herd the civilians to safety</label><br>
+          <input type="radio" id="titan" name="answer" value="t">
+          <label for="titan">I am the titan</label><br>
+          <input type="radio" id="levi" name="answer" value="l">
+          <label for="levi">Charge the titan horde</label><br>
+          <button id="submit" class='submit-btn btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class='page-instance'>
+      <div class='question-index'>3/5</div>
+      <div class="question-text"> On routine cleaning duty, Sasha steals some food and offers it to you. What do you do?</div>
+      <div class="answers">
+        <form id='answers-form'> 
+          <input type='radio' id='erin' name='answer' value='e'>
+          <label for="erin">Admonish her for stealing but sheepishly eat it</label><br>
+          <input type="radio" id="misaka" name="answer" value="m">
+          <label for="misaka">Deny the food, you are fed plenty without the need to steal</label><br>
+          <input type="radio" id="titan" name="answer" value="t">
+          <label for="titan">Eat Sasha</label><br>
+          <input type="radio" id="levi" name="answer" value="l">
+          <label for="levi">Report Sasha for theft</label><br>
+          <button id="submit" class='submit-btn btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class='page-instance'>
+      <div class='question-index'>4/5</div>
+      <div class="question-text"> Which military organization would you join?</div>
+      <div class="answers">
+        <form id='answers-form'> 
+          <input type='radio' id='erin' name='answer' value='e'>
+          <label for="erin">Scouts so I can make a difference</label><br>
+          <input type="radio" id="misaka" name="answer" value="m">
+          <label for="misaka">HWherever my friends go, that's where I go</label><br>
+          <input type="radio" id="titan" name="answer" value="t">
+          <label for="titan">The Titan Horde</label><br>
+          <input type="radio" id="levi" name="answer" value="l">
+          <label for="levi">Somewhere I can get away from my past</label><br>
+          <button id="submit" class='submit-btn btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class='page-instance'>
+      <div class='question-index'>5/5</div>
+      <div class="question-text"> It's the final battle to reclaim Shiganshina, where are you? </div>
+      <div class="answers">
+        <form id='answers-form'> 
+          <input type='radio' id='erin' name='answer' value='e'>
+          <label for="erin">Battling the Titans as one of them</label><br>
+          <input type="radio" id="misaka" name="answer" value="m">
+          <label for="misaka">Waiting for the call for reinforcements so I can go where I'm needed most</label><br>
+          <input type="radio" id="titan" name="answer" value="t">
+          <label for="titan">Trying to eat Erin</label><br>
+          <input type="radio" id="levi" name="answer" value="l">
+          <label for="levi">Charging the Beast Titan alone</label><br>
+          <button id="submit" class='submit-btn btn'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class='page-instance'>
+        <div class='results'>
+          <h2>Congrats! You're most similar to ____</h2>
+          <div class="character">
+            <p>Character description text</p>
+          </div>
+          <div class="reset-state">
+            <button id="reset-btn" class="reset-btn btn">Start over!</button>
+          </div>
+
+        </div>
+      
+    </div>
+    
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
