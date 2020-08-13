@@ -73,7 +73,7 @@ $('main').on('click', '.reset-btn', function (event) {
 
 
 
-$('main').on('click', '#submit', function (e) {
+$('main').on('submit', function (e) {
   e.preventDefault();
   STORE[5].push($('input[name=answer]:checked').val());
   generateNextQuestion();
